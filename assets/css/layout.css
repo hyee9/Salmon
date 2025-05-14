@@ -1,0 +1,105 @@
+
+@import './font.css';
+@import './reset.css';
+@import './common.css';
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+#header {
+    background: transparent; 
+    position: fixed; 
+    width: 100%;
+    z-index: 999;
+    color: #fff;
+    padding: 0 30px;
+}
+
+.warp {
+    height: 100%;
+    position: relative;
+    z-index: 200;
+    color:#fff;
+}
+#header .header-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .729vw;
+}
+#header .hb_btn{
+    background: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#header .lns_nm {
+    background: linear-gradient(to right, #45454b 0%, #999ba4 100%);
+    height: 2px;
+    margin: 4px 0; 
+    width: 30px;
+    transition: transform 0.3s ease; 
+    background: #f00;
+}
+
+#header .h_sap {
+    color: #a9abb5;
+    font: normal .781vw / .781vw Atyp;
+    border: rgba(169, 171, 181, .2) .052vw solid;
+    border-radius: 2.604vw;
+    padding: .938vw 1.979vw 1.25vw;
+    display: inline-block;
+    cursor: pointer;
+    transition: .7s cubic-bezier(.165,.84,.44,1);
+}
+
+#header .menu-area {
+    color: #a9abb5;
+    font: normal .781vw / .781vw Atyp;
+    display: inline-block;
+    position: relative;
+    top: -.104vw;
+    margin-left: 2.292vw;
+}
+
+#header .lns {
+    width: 4.688vw;
+    height: .625vw;
+    position: relative;
+}
+
+#header .lns .lns_nm {
+    display: block;
+    transform-origin: center center;
+    background: linear-gradient(to right, #45454b 0, #999ba4 100%);
+    height: 1px;
+    margin: 0;
+    transition: transform .2s ease-in-out, background .2s ease-in-out;
+    width: 100%;
+    will-change: transform;
+}
+
+#header .lns_nm.lns_nm01 {
+    webkit-animation: lineHover .35s ease-in-out;
+    animation: lineHover .35s ease-in-out;
+}
+
+#header .lns_nm.lns_nm02 {
+    margin-top: .521vw;
+}
+#footer .text-area{
+    display: flex;
+    justify-content: space-between;
+    padding: .885vw 0 1.615vw;
+    border-top: rgba(169, 171, 181, .35) .052vw solid;
+}
+
+#footer .text{
+    color: rgba(107, 108, 114, .7);
+    font: normal 1.51vw / 1.51vw SuisseIntl;
+    letter-spacing: -.038vw;
+}
